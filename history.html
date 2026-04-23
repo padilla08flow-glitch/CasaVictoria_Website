@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia | Boutique Victoria</title>
+    
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/historia/layout.css">
+    <link rel="stylesheet" href="css/home/history.css">
+    <link rel="stylesheet" href="css/historia/timeline.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <header class="historia-header">
+            <h1>Nuestra Historia</h1>
+            <p>Más de un año preservando y celebrando la tradición textil oaxaqueña.</p>
+        </header>
+
+        <section class="historia-split">
+            <div class="bg-crema-full">
+                <div class="container-wrapper split-grid">
+                    
+                    <div class="texto-historia">
+                        <h2>El Arte que Nos Define</h2>
+                        <p>Boutique Victoria nació del deseo de compartir la riqueza del textil oaxaqueño con el mundo moderno. Aunque somos un taller joven, trabajamos con maestras artesanas cuya experiencia hereda siglos de conocimiento.</p>
+                        <p>Cada puntada en nuestras piezas de <strong>bordado</strong> y cada hilo en nuestros <strong>tejidos</strong> cuenta una historia de identidad y resistencia cultural.</p>
+                    </div>
+
+                    <div class="mosaico-imagenes">
+                        <div class="grid-mosaico">
+                            <img src="assets/img/procesos/history1.jpg" alt="Textiles" class="img-mosaico img-grande">                 
+                            <img src="assets/img/procesos/history2.jpg" alt="Telar de madera" class="img-mosaico img-chica-1">              
+                            <img src="assets/img/procesos/history3.jpg" alt="Artesana de Oaxaca" class="img-mosaico img-chica-2">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proceso-iconos">
+        <div class="container-wrapper">
+            <h2>Nuestro Proceso Artesanal</h2>
+            <p>Cada prenda es un testimonio de maestría, donde la tradición y la calidad se entrelazan en cada paso.</p>
+            
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <div class="circle-image-container">
+                        <img src="assets/img/procesos/ns1.jpg" alt="Selección de hilos">
+                    </div>
+                    <h3>Selección de Hilos</h3>
+                    <p>Utilizamos fibras de algodón natural y brillantes hilos de seda para dar vida a los detalles más sofisticados y duraderos de nuestras prendas.</p>
+                </div>
+                
+                <div class="icon-item">
+                    <div class="circle-image-container">
+                        <img src="assets/img/procesos/ns2.jpeg" alt="Telas y fibras">
+                    </div>
+                    <h3>Telas y Fibras</h3>
+                    <p>Trabajamos desde la emblemática manta tradicional hasta fibras contemporáneas como el lino, logrando un equilibrio perfecto entre frescura y elegancia moderna.</p>
+                </div>
+
+                <div class="icon-item">
+                    <div class="circle-image-container">
+                        <img src="assets/img/procesos/ns2.jpg" alt="Confección en taller">
+                    </div>
+                    <h3>Confección en Taller</h3>
+                    <p>Nos encargamos directamente del diseño y armado de cada pieza, asegurando un talle impecable y el respeto total a la integridad del bordado artesanal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="tecnicas-seccion">
+            <div class="container-wrapper">
+                <h2 class="titulo-seccion">Nuestras Técnicas más Populares</h2>
+                
+                <div class="tecnicas-container">
+                    <div class="tecnica-row">
+                        <div class="tecnica-info">
+                            <h3>Bordado a Mano</h3>
+                            <p>Inspirados en la técnica de <strong>San Antonino Castillo Velasco</strong>, cada puntada es un tributo a la flora de nuestra región. Nuestras piezas más características están plasmadas con grandes <strong>Pensamientos</strong> multicolores.</p>
+                        </div>
+                        <div class="tecnica-imagen">
+                            <img src="assets/img/procesos/zigzag1.jpg" alt="Detalle de bordado a mano">
+                        </div>
+                    </div>
+
+                    <div class="tecnica-row">
+                        <div class="tecnica-info">
+                            <h3>El Arte del Deshilado</h3>
+                            <p>Dominamos una gran variedad de técnicas de deshilado <strong>transmitidas por generaciones</strong>. En este proceso, se extraen hilos de la trama original para crear calados elegantes que transforman la tela en una fina pieza de encaje.</p>
+                        </div>
+                        <div class="tecnica-imagen">
+                            <img src="assets/img/procesos/zigzag2.jpg" alt="Arte del deshilado artesanal">
+                        </div>
+                    </div>
+
+                    <div class="tecnica-row">
+                        <div class="tecnica-info">
+                            <h3>Punto de Cruz Ejuteco</h3>
+                            <p>Trabajamos la técnica de Punto de Cruz originaria de <strong>Ejutla de Crespo</strong>. Combinamos figuras geométricas con diseños florales en hilo de algodón sobre lienzos de manta que narran nuestra identidad.</p>
+                        </div>
+                        <div class="tecnica-imagen">
+                            <img src="assets/img/procesos/zigzag3.jpg" alt="Punto de cruz Ejuteco">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Scripts para cargar componentes dinámicos
+        fetch('includes/navbar.html').then(r => r.text()).then(d => document.getElementById('navbar-placeholder').innerHTML = d);
+        fetch('includes/footer.html').then(r => r.text()).then(d => document.getElementById('footer-placeholder').innerHTML = d);
+    </script>
+</body>
+</html>

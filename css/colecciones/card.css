@@ -1,0 +1,76 @@
+.colecciones-grid {
+    display: grid;
+    /* Cambiamos de 2 a 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.coleccion-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+}
+
+.coleccion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 350px; /* Un poco más alta para lucir los bordados */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+    position: relative;
+    flex-grow: 1; /* Hace que todas las cards tengan la misma altura si el texto varía */
+}
+
+.badge-count {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: var(--crema);
+    color: var(--terracota);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: var(--texto-oscuro);
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--texto-light);
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    color: var(--terracota);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .colecciones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .colecciones-grid {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,0 +1,78 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-blanco);
+    transition: all 0.4s ease;
+    padding: 20px 0;
+}
+
+.navbar.scrolled {
+    background-color: var(--terracota-suave);
+    padding: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LOGO {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--texto-oscuro);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.brand-name {
+    color: var(--terracota);
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    font-size: 1.8rem;
+}
+
+.logo-subtitle {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--texto-oscurot);
+}
+
+/*enlaces*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/*hover*/
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--terracota);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after, 
+.nav-links a.active::after {
+    width: 100%;
+}

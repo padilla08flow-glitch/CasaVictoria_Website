@@ -1,0 +1,98 @@
+/* Header de Historia */
+.historia-header {
+    background: linear-gradient(rgba(62, 39, 35, 0.45), rgba(62, 39, 35, 0.45)), 
+                url('../../assets/img/pansy2_banner.png');
+    background-color: var(--crema);
+    padding: 160px 20px 80px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.historia-header h1 {
+    font-size: 3rem;
+    color: var(--color-blanco);
+    margin-bottom: 20px;
+}
+
+.historia-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-fondo);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Grid de Imágenes de Proceso */
+.proceso-iconos {
+    background-color: var(--color-fondo);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* imagenes circulares*/
+.circle-image-container {
+    width: 140px;
+    height: 140px;
+    background-color: var(--crema);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    overflow: hidden; 
+    border: 3px solid var(--terracota-suave); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.circle-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+/* Efecto Hover */
+.icon-item:hover .circle-image-container img {
+    transform: scale(1.1);
+}
+
+.icon-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.icon-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Rmoviles */
+@media (max-width: 768px) {
+    .historia-header {
+        padding: 120px 20px 60px 20px;
+    }
+
+    .historia-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .proceso-iconos {
+        padding: 60px 0;
+    }
+}

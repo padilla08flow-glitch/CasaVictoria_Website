@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactos/hero.css">
+    <link rel="stylesheet" href="css/contactos/info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main class="contacto-page">
+
+        <header class="contacto-header">
+            <h1>Ponte en Contacto</h1>
+            <p>¿Tienes alguna duda o prefieres un diseño personalizado? Escríbenos.</p>
+        </header>
+
+        <section class="container-wrapper contacto-container">
+            <div class="contacto-info">
+                <div class="info-item">
+                    <div class="icon-circle"><i class="fas fa-location-dot"></i></div>
+                    <div>
+                        <h3>Visítanos</h3>
+                        <p>Calle Gregorio Gómez #28 - Plaza Morelos - Local #02, Ocotlán de Morelos, Oaxaca.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Escríbenos</h3>
+                        <p>info@boutiquevictoria.mx</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-circle"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Llámanos</h3>
+                        <p>+52 951 123 4567</p>
+                    </div>
+                </div>
+
+                <div class="social-links-contacto">
+                    <h3>Síguenos</h3>
+                    <div class="icons">
+                        <a href="https://www.tiktok.com/@casa.victoria63?_r=1&_t=ZS-95exRGSrx7U" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/share/18c7qHnLYf/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/c/5219516443772" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15278.835872314978!2d-96.6835920953373!3d16.791148945029445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c740b01153672d%3A0xdb746782a92c9380!2sPlaza%20Morelos!5e0!3m2!1ses-419!2smx!4v1776330321397!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </section>
+
+        
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        fetch('includes/navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            
+        fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Taller | Boutique Victoria</title>
+    <link rel="stylesheet" href="css/taller//hero.css">
+    <link rel="stylesheet" href="css/taller/taller.css">
+    <link rel="stylesheet" href="css/taller/tarjetas.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <header class="taller-hero">
+        <div class="hero-overlay">
+            <h1>Nuestro Taller</h1>
+            <p class="subtitle">Donde la magia del bordado cobra vida</p>
+        </div>
+    </header>
+
+    <div class="divisor-seccion"></div>
+    <section class="espacio-creacion container-wrapper">
+    </section>
+
+    </div>
+    <section class="espacio-creacion container-wrapper">
+        <div class="content-split">
+            <div class="texto">
+                <h2>Un Espacio de Creación</h2>
+                <p>Nuestro taller es el punto de encuentro entre la herencia ancestral y la creatividad contemporánea. Ubicado en el corazón de <strong>Ocotlán de Morelos</strong>, es un espacio luminoso donde nuestras artesanas transforman el tiempo en arte, dando vida a piezas únicas día tras día.</p>
+                <p>Al visitarnos, encontrarás un ambiente cálido que fusiona nuestro taller vivo con nuestra boutique. Entre hilos de colores vibrantes y maniquíes que lucen nuestras creaciones más recientes, podrás ser testigo de la dedicación que define a Casa Victoria.</p>
+                <p>Estamos siempre dispuestos a compartir la historia de nuestros diseños y las minuciosas técnicas de los Valles Centrales con las que elaboramos cada uno de nuestros productos.</p>
+            </div>
+
+            <div class="galeria-taller">
+                <img src="assets/img/procesos/prod1.jpg" alt="ns" class="img-destacada">
+                <img src="assets/img/procesos/prod2.jpeg" alt="ns" class="img-secundaria-1">
+                <img src="assets/img/procesos/prod3.jpg" alt="ns" class="img-secundaria-2">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="servicios-taller">
+        <div class="container-wrapper">
+            <h2 class="section-title">Servicios del Taller</h2>
+            <div class="cards-grid">
+
+                <div class="service-card">
+                    <h3>Envíos Nacionales</h3>
+                    <p>Llevamos el arte de los Valles Centrales a cualquier rincón de la República Mexicana.</p>
+                    <ul class="details">
+                        <li><i class="fas fa-truck"></i> Tiempos sujetos a elaboración</li>
+                        <li><i class="fab fa-whatsapp"></i> +52 951 644 3772</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Cotización de Proyectos</h3>
+                    <p>Solicita un presupuesto para pedidos especiales o eventos de gala (bodas, XV años).</p>
+                    <ul class="details">
+                        <li><i class="fas fa-file-invoice-dollar"></i> Respuesta en 24-48 horas</li>
+                        <li><i class="fas fa-share-alt"></i> Consulta novedades en nuestras redes</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Diseño Personalizado</h3>
+                    <p>Crea una prenda única eligiendo fibras, colores y bordados con nuestra asesoría.</p>
+                    <ul class="details">
+                        <li><i class="fas fa-pencil-ruler"></i> Proceso artesanal exclusivo</li>
+                        <li><i class="far fa-calendar-check"></i> Disponible con cita previa</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Cursos de Costura</h3>
+                    <p>Comparte nuestra pasión y aprende las técnicas de bordado y confección tradicional en nuestro taller.</p>
+                    <ul class="details">
+                        <li><i class="fas fa-graduation-cap"></i> Niveles: Básico a Avanzado</li>
+                        <li><i class="fas fa-info-circle"></i> Consulta fechas de inscripción</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Confección a Medida</h3>
+                    <p>Ajustamos y creamos prendas que se adaptan perfectamente a tu silueta con acabados de alta costura.</p>
+                    <ul class="details">
+                        <li><i class="fas fa-cut"></i> Ajuste personalizado en taller</li>
+                        <li><i class="fas fa-tape"></i> Toma de medidas presencial</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Intervención de Prendas</h3>
+                    <p>Dale una nueva vida a tus prendas favoritas agregando bordados artesanales exclusivos de Oaxaca.</p>
+                    <ul class="details">
+                        <li><i class="fas fa-magic"></i> Transformación creativa</li>
+                        <li><i class="fas fa-hand-sparkles"></i> Detalle artesanal único</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+    <script>
+        fetch('includes/navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            
+        fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

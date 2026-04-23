@@ -1,0 +1,55 @@
+/* --- SECCIÓN DE FILTROS --- */
+.colecciones-page {
+    padding-top: 130px;
+    background-color: var(--crema);
+}
+
+.filtros-container {
+    text-align: center;
+    padding: 60px 0 40px 0; 
+    background-color: var(--crema); 
+}
+
+.botones-filtro {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn-filtro {
+    padding: 12px 28px;
+    border: 1.5px solid var(--terracota-suave);
+    background: white;
+    color: var(--terracota);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    letter-spacing: 0.5px;
+}
+
+.btn-filtro.active, 
+.btn-filtro:hover {
+    background-color: var(--terracota);
+    color: white;
+    border-color: var(--terracota);
+    box-shadow: 0 8px 20px rgba(180, 83, 9, 0.15); 
+    transform: translateY(-2px);
+}
+
+/* moviles */
+@media (max-width: 768px) {
+    .filtros-container {
+        padding: 40px 15px;
+    }
+
+    .btn-filtro {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        flex: 1 1 calc(50% - 15px); 
+    }
+}

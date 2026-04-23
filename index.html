@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Boutique | Ropa Artesanal</title>
+
+    <link rel="stylesheet" href="css/home/columnas.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home/hero.css">
+    <link rel="stylesheet" href="css/home/history.css">
+    <link rel="stylesheet" href="css/home/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <header class="hero-simple">
+        <div class="hero-overlay">
+            <div class="hero-text-content">
+                <h1>Viste con la tradición de Oaxaca.</h1>
+                <p>Piezas únicas hechas por artesanas oaxaqueñas.</p>
+                <a href="colecciones.html" class="btn-principal">Explorar Colecciones</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="propuesta-valor">
+            <div class="container-wrapper grid-tres-columnas">
+                <div class="valor-card">
+                    <div class="circular-img">
+                        <img src="assets/img/iconH1.png" alt="Hecho con amor">
+                    </div>
+                    <h3>Hecho con Amor</h3>
+                    <p>Cada pieza es única, tejida con dedicación ancestral.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="circular-img">
+                        <img src="assets/img/IconH2.png" alt="Diseños únicos">
+                    </div>
+                    <h3>Diseños Únicos</h3>
+                    <p>Piezas exclusividad que fusiona la cultura y modernidad.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="circular-img">
+                        <img src="assets/img/iconH3.png" alt="Artesanas locales">
+                    </div>
+                    <h3>Artesanas Locales</h3>
+                    <p>Todas las piezas son diseñadas y elaboradas por artesanas de Oaxaca.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historia-split">
+            <div class="bg-crema-full"> 
+                <div class="container-wrapper split-grid">
+                    
+                    <div class="texto-historia">
+                        <h2>Un legado ancestral, un estilo eterno.</h2>
+                        <p>En Casa Victoria, cada prenda es el resultado de heredar las técnicas ancestrales que nos han definido como artesanas. Nuestras artesanas dominan una extensa variedad de técnicas pertenecientes a los Valles Centrales, asegurando que cada pieza conserve su autenticidad cultural.</p>
+                        <a href="history.html" class="link-estilizado">Conoce nuestra historia &rarr;</a>
+                    </div>
+                    
+                    <div class="mosaico-imagenes">
+                        <div class="grid-mosaico">
+                            <img src="assets/img/procesos/mosc1.jpg" alt="Artesana trabajando" class="img-mosaico img-grande">
+                            <img src="assets/img/procesos/mosc2.jpg" alt="Textil tradicional" class="img-mosaico img-chica-1">
+                            <img src="assets/img/procesos/mosc3.jpg" alt="Detalle de manos" class="img-mosaico img-chica-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-visita video-container">
+            <video autoplay muted loop playsinline class="banner-video">
+                <source src="assets/img/videoB.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+            <div class="video-overplay"></div>
+
+            <div class="container-wrapper banner-flex">
+                <div class="banner-text">
+                    <h2>Visita Nuestro Taller</h2>
+                    <p>Te invitamos a conocer el proceso artesanal detrás de cada prenda. Visitanos en Ocotlán de Morelos descubre la magia de la creación textil.</p>
+                </div>
+                
+                <div class="banner-action">
+                    <a href="taller.html" class="btn-blanco">Ir al Taller</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+    <script>
+        fetch('includes/navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+        fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

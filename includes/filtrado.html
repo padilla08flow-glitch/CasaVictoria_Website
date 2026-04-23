@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Estilos | Boutique Victoria</title>
+
+    <link rel="stylesheet" href="../css/filtro/filtrado.css">
+    <link rel="stylesheet" href="../css/filtro/productos.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="colecciones-page">
+        <header class="colecciones-hero">
+            <div class="container-wrapper">
+                <h1>Galería de Estilos</h1>
+                <p>Explora nuestra colección completa de diseños artesanales oaxaqueños.</p><br>
+            </div>
+        </header>
+
+        <section class="filtros-container container-wrapper">
+            <div class="botones-filtro">
+                <button class="btn-filtro active" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="mujeres">Mujeres</button>
+                <button class="btn-filtro" data-filter="varones">Varones</button>
+                <button class="btn-filtro" data-filter="niños">Niños</button>
+            </div>
+        </section>
+
+        <section class="galeria-productos container-wrapper">
+            <div class="grid-colecciones">
+    
+                <article class="producto-card" data-category="mujeres">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/M1.jpg" alt="Blusa bordada floral">
+                        <span class="categoria-tag">Mujeres</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Blusa al hombro - Jacaranda</h3>
+                        <p>Bordado multicolor a mano</p>
+                        <span class="precio">$850 MXN</span>
+                    </div>
+                </article>
+
+                <article class="producto-card" data-category="mujeres">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/M2.jpg" alt="Vestido artesanal">
+                        <span class="categoria-tag">Mujeres</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Blusa de cajón multiculor</h3>
+                        <p>Diseño exclusivo en lino</p>
+                        <span class="precio">$1,450 MXN</span>
+                    </div>
+                </article>
+
+                <article class="producto-card" data-category="varones">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/C1.jpg" alt="Guayabera de lino">
+                        <span class="categoria-tag">Varones</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Guayabera floral</h3>
+                        <p>Alforzas finas y deshilado</p>
+                        <span class="precio">$1,100 MXN</span>
+                    </div>
+                </article>
+
+                <article class="producto-card" data-category="niños">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/I1.jpg" alt="Ropa infantil artesanal">
+                        <span class="categoria-tag">Niños</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Vestido Infantil Victoria</h3>
+                        <p>Suave algodón con bordado ligero</p>
+                        <span class="precio">$650 MXN</span>
+                    </div>
+                </article>
+
+                <article class="producto-card" data-category="niños">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/I2.jpg" alt="Vestidito bordado">
+                        <span class="categoria-tag">Niños</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Vestido Niña San Antonino</h3>
+                        <p>Miniatura de nuestra tradición</p>
+                        <span class="precio">$580 MXN</span>
+                    </div>
+                </article>
+
+                <article class="producto-card" data-category="mujeres">
+                    <div class="img-container">
+                        <img src="../assets/img/colecciones/M4.jpg" alt="Vestidito bordado">
+                        <span class="categoria-tag">Niños</span>
+                    </div>
+                    <div class="info-producto">
+                        <h3>Blusa San Martín</h3>
+                        <p>Miniatura de nuestra tradición</p>
+                        <span class="precio">$950 MXN</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/main.js"></script>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

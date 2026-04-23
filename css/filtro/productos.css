@@ -1,0 +1,78 @@
+/* --- GRID DE PRODUCTOS --- */
+.grid-colecciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 40px; 
+    padding: 40px 0 100px 0;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03); 
+}
+
+.producto-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.img-container {
+    position: relative;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.producto-card:hover .img-container img {
+    transform: scale(1.08);
+}
+
+.categoria-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: var(--terracota);
+    backdrop-filter: blur(4px); 
+}
+
+.info-producto {
+    padding: 25px;
+    text-align: center;
+}
+
+.info-producto h3 {
+    margin: 0 0 8px 0;
+    color: var(--texto-oscuro);
+    font-size: 1.25rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.info-producto p {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.precio {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--terracota);
+    border-top: 1px solid #f5f5f5;
+    padding-top: 15px;
+}

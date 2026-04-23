@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones | Boutique Victoria</title>
+    
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/colecciones/header.css">
+    <link rel="stylesheet" href="css/colecciones/card.css">
+    <link rel="stylesheet" href="css/colecciones/galeria.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <header class="colecciones-header">
+        <div class="icon-accent"><i class="fas fa-sparkles"></i></div>
+        <h1>Nuestras Colecciones</h1>
+        <p>Descubre nuestra selección de prendas artesanales hechas con amor.</p>
+    </header>
+
+    <main class="container-wrapper">
+        <section class="colecciones-grid">
+            <article class="coleccion-card">
+                <img src="assets/img/colecciones/dama.jpg" class="card-image" alt="Bordados">
+                <div class="card-content">
+                    <span class="badge-count">25+ piezas</span>
+                    <h3>Prendas para Dama</h3>
+                    <p>Piezas exclusivas creadas para la mujer que busca portar arte, historia y distinción en una sola prenda.</p>
+                    <a href="includes/filtrado.html" class="btn-link">Ver detalles <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="coleccion-card">
+                <img src="assets/img/colecciones/caballero.jpg" class="card-image" alt="Bordados">
+                <div class="card-content">
+                    <span class="badge-count">25+ piezas</span>
+                    <h3>Prendas para Caballero</h3>
+                    <p>Descubre nuestra propuesta para caballero: camisas y guayaberas para el hombre que valora el detalle y la historia en su vestimenta.</p>
+                    <a href="includes/filtrado.html" class="btn-link">Ver detalles <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="coleccion-card">
+                <img src="assets/img/colecciones/infantes.jpg" class="card-image" alt="Bordados">
+                <div class="card-content">
+                    <span class="badge-count">25+ piezas</span>
+                    <h3>Prendas para niños</h3>
+                    <p> Nuestra colección para niños ofrece piezas diseñadas para que las nuevas generaciones vistan nuestra cultura.</p>
+                    <a href="includes/filtrado.html" class="btn-link">Ver detalles <span>→</span></a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <section class="galeria-estilos-banner">
+        <h2>Galería de Estilos</h2>
+        <p>Explora nuestra galería completa con todos los diseños disponibles.</p>
+        <a href="includes/filtrado.html" class="btn-principal">Ver Galería Completa</a>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('includes/navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            
+        fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
