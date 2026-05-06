@@ -36,91 +36,21 @@
 
         <section class="galeria-productos container-wrapper">
             <div class="grid-colecciones">
-    
-                <article class="producto-card" data-category="mujeres">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/M1.jpg" alt="Blusa bordada floral">
-                        <span class="categoria-tag">Mujeres</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Blusa al hombro - Jacaranda</h3>
-                        <p>Bordado multicolor a mano</p>
-                        <span class="precio">$850 MXN</span>
-                    </div>
-                </article>
-
-                <article class="producto-card" data-category="mujeres">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/M2.jpg" alt="Vestido artesanal">
-                        <span class="categoria-tag">Mujeres</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Blusa de cajón multiculor</h3>
-                        <p>Diseño exclusivo en lino</p>
-                        <span class="precio">$1,450 MXN</span>
-                    </div>
-                </article>
-
-                <article class="producto-card" data-category="varones">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/C1.jpg" alt="Guayabera de lino">
-                        <span class="categoria-tag">Varones</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Guayabera floral</h3>
-                        <p>Alforzas finas y deshilado</p>
-                        <span class="precio">$1,100 MXN</span>
-                    </div>
-                </article>
-
-                <article class="producto-card" data-category="niños">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/I1.jpg" alt="Ropa infantil artesanal">
-                        <span class="categoria-tag">Niños</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Vestido Infantil Victoria</h3>
-                        <p>Suave algodón con bordado ligero</p>
-                        <span class="precio">$650 MXN</span>
-                    </div>
-                </article>
-
-                <article class="producto-card" data-category="niños">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/I2.jpg" alt="Vestidito bordado">
-                        <span class="categoria-tag">Niños</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Vestido Niña San Antonino</h3>
-                        <p>Miniatura de nuestra tradición</p>
-                        <span class="precio">$580 MXN</span>
-                    </div>
-                </article>
-
-                <article class="producto-card" data-category="mujeres">
-                    <div class="img-container">
-                        <img src="../assets/img/colecciones/M4.jpg" alt="Vestidito bordado">
-                        <span class="categoria-tag">Niños</span>
-                    </div>
-                    <div class="info-producto">
-                        <h3>Blusa San Martín</h3>
-                        <p>Miniatura de nuestra tradición</p>
-                        <span class="precio">$950 MXN</span>
-                    </div>
-                </article>
 
             </div>
         </section>
     </main>
 
     <div id="footer-placeholder"></div>
+    <script src="../js/products.js"></script> 
     <script src="../js/main.js"></script>
+
     <script>
-        fetch('navbar.html')
+        fetch('../includes/navbar.html')
             .then(res => res.text())
             .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
 
-        fetch('footer.html')
+        fetch('../includes/footer.html')
             .then(res => res.text())
             .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     </script>
